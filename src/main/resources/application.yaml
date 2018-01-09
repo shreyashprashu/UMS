@@ -1,0 +1,24 @@
+server:
+  port: 8083
+ # contextPath: /csquare
+spring:
+  application:
+    name: Csquare ERP
+  
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/csquare
+    driverClassName: org.postgresql.Driver
+    username: postgres
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+#serverFilePath:
+ # fileDestinationPath: D://derp_doc
